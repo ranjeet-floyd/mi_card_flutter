@@ -11,8 +11,10 @@ class MICardApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.teal,
-        body: Container(
-          child: Text("Hello Container"),
+        body: SafeArea(
+          child: Container(
+            child: Text("Hello Container"),
+          ),
         ),
       ),
     );

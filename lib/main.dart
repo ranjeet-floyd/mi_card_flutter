@@ -12,8 +12,23 @@ class MICardApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Container(
-            child: Text("Hello Container"),
+          child: Column(
+            children: <Widget>[
+              CircleAvatar(
+                radius: 60,
+                backgroundColor: Colors.white,
+                backgroundImage: AssetImage(
+                  'images/ranjeet.jpg',
+                ),
+              ),
+              Text(
+                'Ranjeet Kumar',
+                style: TextStyle(
+                    fontSize: 40,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
+              ),
+            ],
           ),
         ),
       ),
